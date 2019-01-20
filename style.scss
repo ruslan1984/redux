@@ -1,0 +1,92 @@
+$btnFrontBackground: #ffbd03;
+$btnFrontBackgroundHover: #ecaf02;
+$btnBackBackground: #776b47;
+$btnBackBackgroundHover: #403e38;
+$btnSendBackground: #b1b1b1;
+$btnSendBackgroundHover: #a5a5a5;
+
+.main{    
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px;
+    width: 100%;
+    max-width: 800px;
+	box-sizing: border-box;
+	animation: shadow  2s;
+	@media(min-width:786px){
+		padding: 37px;	
+	}
+	.btn{	
+	    border: none;
+	    padding: 10px;
+	    font-size: 20px;
+	    margin: 3px;
+	    text-transform: uppercase;
+	    border-radius: 5px;
+	    color: white;
+	    min-width: 150px;
+	    cursor: pointer;
+	    transition: 0.3s;
+	    &:hover{
+	    	box-shadow: 0px 0px 6px 0px #9a8d5c;
+	    }
+	    @media(min-width:786px){
+			margin: 10px;
+		}
+	    &.front{
+			background: $btnFrontBackground;
+		}
+		&.front:hover{
+			background: $btnFrontBackgroundHover;
+		}
+		&.back{
+			background: $btnBackBackground;
+		}
+		&.back:hover{
+			background: $btnBackBackgroundHover;
+		}
+		&.send{
+			background: $btnSendBackground;
+		}
+		&.send:hover{
+			background: $btnSendBackgroundHover;
+		}
+	}
+
+	.input,
+	.textarea{
+		width: 100%;
+	    padding: 10px;
+	    font-size: 15px;
+	    border-radius: 5px;
+	    box-sizing: border-box;   
+	    border: 1px solid darkgrey;
+	}
+
+	.input{	
+		margin: 25px 0px 10px;
+	}
+	.textarea{
+	 	min-height: 80px;
+	}
+
+	.label{
+	    text-align: left;
+	    display: block;
+	    font-size: 30px;
+	}	
+}
+@keyframes shadow {
+		from {
+			transform: rotate(30deg);
+			opacity: 0
+		}	
+		to {
+			transform: rotate(0deg);
+			opacity: 1
+		}
+	}
+
+.textRight{
+	text-align: right;
+}
