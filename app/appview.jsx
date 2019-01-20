@@ -30,7 +30,7 @@ class MyForm extends React.Component {
                 <Item key={item} text={item}  />
               )}           
            <p class="textRight">
-            <button class="btn">Отправить</button>
+            <button class="btn send">Отправить</button>
            </p>
         </form>
       );
