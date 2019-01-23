@@ -8,6 +8,11 @@
         "build": "webpack",
         "start": "lite-server"
     },
+    "license": "SEE LICENSE IN <filename>",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/username/repository.git"
+    },
     "dependencies": {
         "immutable": "^3.8.2",
         "react": "^16.5.0",
